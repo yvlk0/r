@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nigga.space</title>
-  <style>
-    html, body {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spinning Text</title>
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: white;
-      font-family: Arial, sans-serif;
-    }
+<style>
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+}
 
-    h1 {
-      font-size: 6vw;
-      margin: 0;
-      text-align: center;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 6vw;
+    margin: 0;
+    animation: spinScale 2s linear infinite;
+}
+
+@keyframes spinScale {
+    0% {
+        transform: rotate(0deg) scale(1);
     }
-  </style>
+    25% {
+        transform: rotate(90deg) scale(1.5);
+    }
+    50% {
+        transform: rotate(180deg) scale(1);
+    }
+    75% {
+        transform: rotate(270deg) scale(0.5);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+</style>
 </head>
+
 <body>
-  <h1>get beamed nigga</h1>
+    <h1>get beamed nigga</h1>
 </body>
 </html>
