@@ -7,6 +7,27 @@
 <link rel="icon" type="image/png" href="android-chrome-192x192.png">
 
 <style>
+.discord-link {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: #5865F2;
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1000;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.discord-link:hover { transform: translateY(-2px); background: #4752C4; }
+.discord-link:active { transform: translateY(0); background: #3b4db3; }
+
 html, body {
     margin: 0;
     width: 100%;
@@ -53,7 +74,7 @@ h1 {
     <h1>get beamed nigga</h1>
     
 <a href="https://discord.gg/ZqsfjXp5BC" target="_blank" rel="noopener noreferrer"
-   class="discord-link" aria-label="Join our Discord server">
+   class="discord-link">
   <span>Discord</span>
 </a>
 
